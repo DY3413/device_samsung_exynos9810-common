@@ -138,10 +138,6 @@ vendor/etc/plmn_se13.bin|5aca250b4c17cad71a6ba9908f99d2668c37fd2c
 -vendor/lib64/vendor.samsung.hardware.radio@2.0.so|f26cef6accc7a23c0251205403746f31233ce636
 -vendor/lib64/vendor.samsung.hardware.radio@2.1.so|812b23bc8a807a9c8539955967fc988d9f35319a
 
-# Samsung SLSI Memtrack
--vendor/lib64/hw/memtrack.exynos9810.so
--vendor/lib/hw/memtrack.exynos9810.so
-
 # Secnative
 -vendor/lib/libsecnativefeature.so
 -vendor/lib64/libsecnativefeature.so
