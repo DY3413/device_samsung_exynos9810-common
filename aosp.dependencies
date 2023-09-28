@@ -8,6 +8,10 @@
         "target_path": "hardware/samsung"
     },
     {
+        "repository": "android_hardware_samsung_slsi-linaro",
+        "target_path": "hardware/samsung_slsi-linaro"
+    },
+    {
         "repository": "android_kernel_samsung_exynos9810",
         "target_path": "kernel/samsung/exynos9810"
     }
