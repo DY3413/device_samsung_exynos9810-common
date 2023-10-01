@@ -4,9 +4,8 @@
 vendor/etc/audio_board_info.xml
 vendor/etc/default_volume_tables.xml
 vendor/etc/usb_audio_policy_configuration.xml
--vendor/lib/libSamsungPostProcessConvertor.so
--vendor/lib/lib_SoundAlive_SRC384_ver320.so
--vendor/lib/lib_soundaliveresampler.so
+-vendor/lib/vndk/libaudioroute.so;MODULE=libaudioroute.exynos9810
+-vendor/lib/vndk/libtinyalsa.so;MODULE=libtinyalsa.exynos9810
 -vendor/lib/libaboxpcmdump.so
 -vendor/lib/libalsautils_sec.so
 -vendor/lib/libaudio_soundtrigger.so
@@ -17,29 +16,11 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/lib/libprofileparamstorage.so
 -vendor/lib/libsecaudiocoreutils.so
 -vendor/lib/libsecaudioinfo.so
--vendor/lib/vndk/libaudioroute.so;MODULE=libaudioroute.exynos9810
--vendor/lib/vndk/libtinyalsa.so;MODULE=libtinyalsa.exynos9810
+-vendor/lib/libSamsungPostProcessConvertor.so
+-vendor/lib/lib_SoundAlive_SRC384_ver320.so
+-vendor/lib/lib_soundaliveresampler.so
 -vendor/lib64/libfloatingfeature.so
 -vendor/lib64/libsecaudioinfo.so
-
-# Audio Firmware
-vendor/firmware/HFD.cfg.bin
-vendor/firmware/HFD.model.new
-vendor/firmware/HFD_PP.bin
-vendor/firmware/HFD_tracker.bin
-vendor/firmware/cs47l92-dsp1-trace.wmfw
-vendor/firmware/dsm.bin
-vendor/firmware/vts.bin
-
-# Biometrics
--vendor/lib/libegis_fp_normal_sensor_test.so
--vendor/lib/libgf_in_system_lib.so
--vendor/lib/libqfp_sensortest.so
--vendor/lib/libsynaFpSensorTestNwd.so
--vendor/lib64/libegis_fp_normal_sensor_test.so
--vendor/lib64/libgf_in_system_lib.so
--vendor/lib64/libqfp_sensortest.so
--vendor/lib64/libsynaFpSensorTestNwd.so
 
 # Camera
 -vendor/lib/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.exynos9810
@@ -71,51 +52,47 @@ vendor/firmware/vts.bin
 -vendor/lib64/libIDDQD_interface.so
 -vendor/lib64/libOpenCv.camera.samsung.so
 
-# Camera firmware
-vendor/firmware/score/develop1/score_dummy
-vendor/firmware/score/camera1/score_kc2_pmw.bin
-vendor/firmware/score/camera1/score_kc2_dmb.bin
-vendor/firmware/score/camera1/score_mc_pmw.bin
-vendor/firmware/score/camera1/score_kc1_dmb.bin
-vendor/firmware/score/camera1/score_kc1_pmw.bin
-vendor/firmware/score/camera1/score_mc_dmb.bin
-vendor/firmware/score/camera3/score_kc2_pmw.bin
-vendor/firmware/score/camera3/score_kc2_dmb.bin
-vendor/firmware/score/camera3/score_mc_pmw.bin
-vendor/firmware/score/camera3/score_kc1_dmb.bin
-vendor/firmware/score/camera3/score_kc1_pmw.bin
-vendor/firmware/score/camera3/score_mc_dmb.bin
-vendor/firmware/score/camera2/score_kc2_pmw.bin
-vendor/firmware/score/camera2/score_kc2_dmb.bin
-vendor/firmware/score/camera2/score_mc_pmw.bin
-vendor/firmware/score/camera2/score_kc1_dmb.bin
-vendor/firmware/score/camera2/score_kc1_pmw.bin
-vendor/firmware/score/camera2/score_mc_dmb.bin
-
 # Codecs
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 
-## Exynos Multi-Format Codec (MFC) Firmware
+# Exynos Multi-Format Codec (MFC) Firmware
 vendor/firmware/mfc_fw.bin
 
-# Gatekeeper
--vendor/lib/hw/gatekeeper.exynos9810.so
--vendor/lib64/hw/gatekeeper.exynos9810.so
+# Fingerprint
+-vendor/lib/libegis_fp_normal_sensor_test.so
+-vendor/lib/libgf_in_system_lib.so
+-vendor/lib/libqfp_sensortest.so
+-vendor/lib/libsynaFpSensorTestNwd.so
+-vendor/lib64/libegis_fp_normal_sensor_test.so
+-vendor/lib64/libgf_in_system_lib.so
+-vendor/lib64/libqfp_sensortest.so
+-vendor/lib64/libsynaFpSensorTestNwd.so
+
+# Firmware
+vendor/firmware/cs47l92-dsp1-trace.wmfw
+vendor/firmware/score/camera1/score_kc1_dmb.bin
+vendor/firmware/score/camera1/score_kc1_pmw.bin
+vendor/firmware/score/camera1/score_kc2_dmb.bin
+vendor/firmware/score/camera1/score_kc2_pmw.bin
+vendor/firmware/score/camera1/score_mc_dmb.bin
+vendor/firmware/score/camera1/score_mc_pmw.bin
+vendor/firmware/score/camera2/score_kc1_dmb.bin
+vendor/firmware/score/camera2/score_kc1_pmw.bin
+vendor/firmware/score/camera2/score_kc2_dmb.bin
+vendor/firmware/score/camera2/score_kc2_pmw.bin
+vendor/firmware/score/camera2/score_mc_dmb.bin
+vendor/firmware/score/camera2/score_mc_pmw.bin
+vendor/firmware/score/camera3/score_kc1_dmb.bin
+vendor/firmware/score/camera3/score_kc1_pmw.bin
+vendor/firmware/score/camera3/score_kc2_dmb.bin
+vendor/firmware/score/camera3/score_kc2_pmw.bin
+vendor/firmware/score/camera3/score_mc_dmb.bin
+vendor/firmware/score/camera3/score_mc_pmw.bin
+vendor/firmware/score/develop1/score_dummy
 
 # GPS/GNSS
--vendor/bin/hw/gpsd
--vendor/bin/hw/lhd
--vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
 vendor/etc/gnss/gps.cer
-vendor/etc/gnss/gps.xml
-vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
-vendor/etc/sensor/lhd.conf
--vendor/lib64/hw/gps.default.so
--vendor/lib64/hw/android.hardware.gnss@2.0-impl.so
--vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
 -vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 
 # Graphics/Mali - N770FXXU8HWA2
@@ -128,12 +105,13 @@ vendor/etc/sensor/lhd.conf
 -vendor/lib/hw/vulkan.mali.so|eae6e331f73caf11d93534eb093e791bfb093f26
 -vendor/lib64/hw/vulkan.mali.so|e163e88ac8801721922dfd1209cc719cc3a61763
 
-# Keymaster
--vendor/lib64/hw/keystore.mdfpp.so
--vendor/lib64/libkeymaster2_mdfpp.so
--vendor/lib64/libskeymaster3device.so
-
 # Mobicore
+-vendor/bin/mcDriverDaemon
+vendor/etc/init/mobicore.rc
+-vendor/lib/libMcClient.so
+-vendor/lib64/libMcClient.so
+
+# Mobicore Firmware
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/app/mcRegistry/08130000000000000000000000000000.tlbin
 vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin
@@ -159,10 +137,6 @@ vendor/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin
 vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin
--vendor/bin/mcDriverDaemon
-vendor/etc/init/mobicore.rc
--vendor/lib/libMcClient.so
--vendor/lib64/libMcClient.so
 
 # Power
 -vendor/lib/hw/power.exynos9810.so
@@ -215,10 +189,8 @@ vendor/openvx/xml/_hifi_still_schedule.xml
 
 # Sensors
 vendor/etc/sensors/hals.conf
--vendor/lib/sensors.bio.so
 -vendor/lib/sensors.grip.so
 -vendor/lib64/libflicker.so
--vendor/lib64/sensors.bio.so
 -vendor/lib64/sensors.grip.so
 
 # Widevine
