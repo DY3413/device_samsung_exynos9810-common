@@ -22,14 +22,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/lib64/libfloatingfeature.so
 -vendor/lib64/libsecaudioinfo.so
 
-# Camera
--vendor/lib/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.exynos9810
--vendor/lib/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.exynos9810
--vendor/lib/camera.device@3.5-impl.so;MODULE=camera.device@3.5-impl.exynos9810
--vendor/lib64/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.exynos9810
--vendor/lib64/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.exynos9810
--vendor/lib64/camera.device@3.5-impl.so;MODULE=camera.device@3.5-impl.exynos9810
-
 # Camera dependencies
 -vendor/lib/libSEF.quram.so
 -vendor/lib/libcnn.so
