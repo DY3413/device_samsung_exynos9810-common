@@ -91,9 +91,10 @@ vendor/firmware/score/camera3/score_mc_dmb.bin
 vendor/firmware/score/camera3/score_mc_pmw.bin
 vendor/firmware/score/develop1/score_dummy
 
-# GPS/GNSS
-vendor/etc/gnss/gps.cer
--vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+# GPS - N770FXXU9HWI2
+vendor/bin/hw/gps.sh|8f332ef428a5b7a7546844232882e4e88ed9e10b
+vendor/etc/gnss/gps.cer|592243feb0f1b76ddf592cc43b124240e5275cf3
+-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so|6900d76d58610f2542543ec4a2a1a23c76ea13f8
 
 # Graphics/Mali - N770FXXU8HWA2
 -vendor/etc/snap_gpu_kernel_64.bin|9a21ffa4194b2698d4f2ad8e64839889f04db490
