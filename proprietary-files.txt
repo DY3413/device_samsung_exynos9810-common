@@ -24,8 +24,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 
 # Camera dependencies
 -vendor/lib/libSEF.quram.so
--vendor/lib/libcnn.so
--vendor/lib/libhfd.so
 -vendor/lib/libsensorlistener.so
 -vendor/lib/libuniapi.so
 -vendor/lib/libuniplugin.so
@@ -157,19 +155,6 @@ vendor/etc/plmn_se13.bin|5aca250b4c17cad71a6ba9908f99d2668c37fd2c
 -vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so|38bc33189382277cd9ea0a44d2f9a8a13e91bf49
 -vendor/lib64/vendor.samsung.hardware.radio@2.0.so|f26cef6accc7a23c0251205403746f31233ce636
 -vendor/lib64/vendor.samsung.hardware.radio@2.1.so|812b23bc8a807a9c8539955967fc988d9f35319a
-
-# Samsung SLSI IVA
--vendor/lib/libiva_android_hal.so
--vendor/lib/libvxu.so
--vendor/lib64/libiva_android_hal.so
--vendor/lib64/libvxu.so
-vendor/openvx/cost/cost_c_iva.dat
-vendor/openvx/cost/cost_c_neon.dat
-vendor/openvx/cost/cost_c_score.dat
-vendor/openvx/cost/cost_c_std.dat
-vendor/openvx/cost/cost_iva.dat
-vendor/openvx/cost/cost_score.dat
-vendor/openvx/xml/_hifi_still_schedule.xml
 
 # Samsung SLSI Memtrack
 -vendor/lib64/hw/memtrack.exynos9810.so
