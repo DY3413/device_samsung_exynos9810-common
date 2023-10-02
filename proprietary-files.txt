@@ -6,12 +6,7 @@ vendor/etc/default_volume_tables.xml
 vendor/etc/usb_audio_policy_configuration.xml
 -vendor/lib/vndk/libaudioroute.so;MODULE=libaudioroute.exynos9810
 -vendor/lib/vndk/libtinyalsa.so;MODULE=libtinyalsa.exynos9810
--vendor/lib/libaboxpcmdump.so
 -vendor/lib/libalsautils_sec.so
--vendor/lib/libaudio_soundtrigger.so
--vendor/lib/libaudiodebugfs.so
--vendor/lib/libcodecdspdump.so
--vendor/lib/libdatamod.so
 -vendor/lib/libfloatingfeature.so
 -vendor/lib/libprofileparamstorage.so
 -vendor/lib/libsecaudiocoreutils.so
@@ -23,24 +18,11 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/lib64/libsecaudioinfo.so
 
 # Camera dependencies
--vendor/lib/libSEF.quram.so
--vendor/lib/libsensorlistener.so
--vendor/lib/libuniapi.so
 -vendor/lib/libuniplugin.so
--vendor/lib/libvkmanager_vendor.so
 -vendor/lib64/libSEF.quram.so
 -vendor/lib64/libsensorlistener.so
 -vendor/lib64/libuniapi.so
 -vendor/lib64/libuniplugin.so
--vendor/lib64/libvkmanager_vendor.so
-
-# Camera IDDQD plugin
--vendor/lib/libIDDQD_core.so
--vendor/lib/libIDDQD_interface.so
--vendor/lib/libOpenCv.camera.samsung.so
--vendor/lib64/libIDDQD_core.so
--vendor/lib64/libIDDQD_interface.so
--vendor/lib64/libOpenCv.camera.samsung.so
 
 # Codecs
 vendor/etc/media_codecs.xml
